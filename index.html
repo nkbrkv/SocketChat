@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chat App</title>
+  <link rel="stylesheet" href="main.css">
+  <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <form class="decor" id="send-container">
+    <div class="form-left-decoration"></div>
+    <div class="form-right-decoration"></div>
+    <div class="circle"></div>
+    <div class="form-inner">
+      <h3>Скажи что-то:</h3>
+      <textarea placeholder="Сообщение..." rows="3" id="message-input"></textarea>
+      <input type="submit" id="send-button" value="Отправить">
+    </div>
+    <div id="message-container"></div>
+  </form>
+
+</body>
+</html>
